@@ -1,0 +1,34 @@
+# Install Git from website and click install or run following command in Powershell
+
+Start-Process -FilePath "C:\Temp\UpgradeClientInstaller\setup.exe" 
+
+# Then open vscode and there write
+
+Git -version
+Git config --global user.name "Shanikh Naveed Ahmed"
+Git config --global user.email "shaikhkjkd@gmail.com"
+Git config --global --edit
+
+#this will take you to the vim editor where you can edit the config file
+#To exit the VIM editor
+
+Esc shift+; wq Enter
+
+___________________________________________________________________________________________________
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+# Now when you want to add a file, simply create using the plus icon in left hand blade and follow steps
+	1. Git status
+
+	2. Git add <filename> 
+Or 
+Git add .
+
+	3. Git commit -m "Message you want to add for better understanding"
+
+Once you are happy with all the files properly added to the git…Then we will push them to GitHub
+
+	1. Git remote -v  ## To check the origin and head on which branch
+	2. Git branch -M master ## To switch to desired branch
+	3. Git push -u origin <name of the branch you have selected> ## this will push your file to the branch which you ca check by refreshing the browser
+	
